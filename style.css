@@ -1,48 +1,85 @@
-body{
-    font-family: 'Orbitron', sans-serif;
-    background-color: #121212;
-    color: #322871;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
 }
 
-header {
-    background: #3a0947;
-    padding: 2rem;
-    text-align: center;
+.hero {
+  background: rgb(34, 15, 68);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: #eeeeee;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #47c619;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #eeeeee;
 }
 
-p {
-    color: #ccc;
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: background-color 0.2s ease;
 }
 
-section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+.cta-button:hover {
+  background-color: #005fcc;
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .project-card {
-    background-color: #222;
-    padding: 1rem;
-    border-radius: 12px;
+  background: rgb(221, 221, 221);
+  border-radius: 12px;
+  box-shadow: 0 0 12px #000000;
+  padding: 1rem;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.about {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 footer {
-    background: #1f1f1f;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #0077ff;
+  text-decoration: none;
 }
